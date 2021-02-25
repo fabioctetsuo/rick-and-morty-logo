@@ -23,12 +23,22 @@ const Logo = () => {
       ".letter",
       {
         fill: "#4aeeeb",
-        stroke: "#fff"
+        stroke: "#b3fdff"
       },
       {
         fill: "#1abed6",
         stroke: "#000",
         duration: 3
+      },
+      1
+    );
+    logoTl.fromTo(
+      ".dropshadow-color",
+      {
+        floodColor: "#b3fdff"
+      },
+      {
+        floodColor: "#7dff7a"
       },
       1
     );
@@ -48,6 +58,7 @@ const Logo = () => {
           colorInterpolationFilters="linearRGB"
         >
           <feDropShadow
+            className="dropshadow-color"
             stdDeviation="15 15"
             in="SourceGraphic"
             dx="0"
