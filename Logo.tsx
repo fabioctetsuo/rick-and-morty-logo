@@ -42,12 +42,17 @@ const Logo = () => {
       },
       1
     );
+    logoTl.to(".logo", {
+      scale: 0.7,
+      transformOrigin: "center center",
+      ease: "bounce.out"
+    });
 
     logoTl.play();
   }, []);
 
   return (
-    <svg viewBox="0 0 1000 293.064">
+    <svg viewBox="0 0 1000 293.064" className="logo-container">
       <defs>
         <filter
           id="logoBlur"
